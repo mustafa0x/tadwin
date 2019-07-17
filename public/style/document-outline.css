@@ -1,0 +1,30 @@
+#document-outline {
+  max-width: 19rem;
+  position: fixed;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0 2px #000;
+}
+#document-outline .lvl-1 {
+  font-size: 1rem;
+}
+#document-outline .lvl-2 {
+  font-size: 0.95rem;
+  margin-inline-start: 1rem;
+}
+#document-outline .lvl-2::before {
+  content: '- ';
+}
+#document-outline .lvl-3 {
+  font-size: 0.9rem;
+  margin-inline-start: 2rem;
+}
+#document-outline .lvl-3::before {
+  content: '* ';
+}
+#document-outline .lvl-4 {
+  margin-inline-start: 3rem;
+}
